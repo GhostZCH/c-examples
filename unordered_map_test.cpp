@@ -73,3 +73,11 @@ int main()
     return 0;
 }
 
+//g++ - std = c++11 - O1 unorderedmap.cpp
+//start
+//10485760
+//3495254
+//6990506
+//end
+//. / a.out  1.00s user 0.22s system 99 % cpu 1.239 total
+
