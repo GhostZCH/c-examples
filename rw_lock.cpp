@@ -83,7 +83,6 @@ class ShareMap
 {
 public:
 	ShareMap()
-		:update_count_(0)
 	{
 		for (int i =0; i < 10; i++) {
 			map_[i] = i;
