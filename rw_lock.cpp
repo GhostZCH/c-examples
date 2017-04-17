@@ -1,3 +1,5 @@
+#include "stdafx.h"
+
 #include <mutex>
 #include <thread>
 #include <iostream>
@@ -106,16 +108,9 @@ public:
 		for (; iter != map_.end(); iter++) {
 			iter->second += 10;
 		}
-		update_count_++;
-	}
-
-	int UpdateCount()
-	{
-		return update_count_;
 	}
 
 private:
-	int update_count_;
 	RWLock lock_;
 	unordered_map<int, int> map_;
 };
@@ -161,6 +156,6 @@ int main()
 
 	writer.join();
 
-    return 0;
+	return 0;
 }
 
